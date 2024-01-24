@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubber</title>
+
+    <link rel="stylesheet" href="../css/perfil.css">
+    <link rel="shortcut icon" href="/site alca/src/img/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+    <header>
+        <div class="perfil">
+            <div class="logo">
+            <a href="../html/main-page.html"><img src="/site alca/src/img/logodubsol.png" width="150px"></a>
+        </div>
+
+           
+      
+            <img src="/site alca/src/img/juarez.jpeg" id="user" onclick="toggleMenu()">
+        
+            <div class="menu-wrap" id="subMenu">
+                <div class="menu">
+                    <a href="/site alca/assets/html/perfil.html" class="links">
+                        <img src="/site alca/src/img-fav/usuario.png" width="25px">
+                        <p>Meu perfil</p>
+                        <span>></span>
+                    </a>
+                    <a href="/site alca/assets/html/casdastro.html" class="links">
+                        <img src="/site alca/src/img-fav/papel.png" width="22px">
+                        <p>Minhas informações</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="links">
+                        <img src="/site alca/src/img-fav/x.png" width="20px">
+                        <p>Sair</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        
+        </div>
+        <script>
+            let subMenu = document.getElementById("subMenu");
+
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu");
+        }
+        </script>
+        <div class="header-icon">
+                <a href="#"><span class="cash"><img src="/site alca/src/img-fav/cash.svg" width="31px"></span></a>
+                <a href="#"><span class="bell"><img src="/site alca/src/img-fav/bell.svg" width="31px"></span></a>
+                <a href="#"><span class="chat"><img src="/site alca/src/img-fav/chat.svg    " width="30px"></span></a>
+        </div>
+    
+    </header>
+    <br>
+
+    <h2>Seu perfil</h2>
+    <div class="profile-edit-card-container">
+        <div class="profile-edit">
+            <img src="/site alca/src/img/juarez.jpeg">       
+            <form action="post">
+                <div class="nome">
+                    <label for="nome">
+                        Nome: 
+                        <br>
+                        <input type="text" placeholder="Digite seu nome!">
+                    </label>
+                </div>
+                <br>
+                <div class="sobrenome">
+                    <label for="sobrenome">
+                        Sobrenome:
+                        <br>
+                        <input type="text" placeholder="Digite seu sobrenome">
+                    </label>
+                </div>
+                <br>
+                <div class="fuso-horario">
+                    <label for="fuso-horario">
+                        Fuso horario
+                        <br>
+                        <select id="fuso-horario">
+                            <option value="#">Selecione</option>
+                            <option value="#">1</option>
+                            <option value="#">2</option>
+                            <option value="#">3</option>
+                            <option value="#">4</option>
+                        </select>
+                    </label>
+                </div>    
+
+                <div class="valor">
+                    <label for="valor">
+                        Valor/min 
+                        <br>
+                        <input type="text" placeholder="Digite o valor desejado.">
+                    </label>
+                </div>
+
+                <div class="linguagem">
+                    <label for="linguagem">
+                        Idioma:
+                        <br>
+                        <select id="idioma">
+                            <option value="#">Selecione</option>
+                            <option value="#">Português</option>
+                            <option value="#">Inglês</option>
+                            <option value="#">Espanhol</option>
+                            <option value="#">Indiano</option>
+                            <option value="#">Chines</option>
+                            <option value="#">Turco</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="descrição">
+                    <label for="descrição">
+                        Escreva uma boa descrição:
+                        <br>
+                       <textarea id="descrição" cols="50" rows="50"></textarea>
+                    </label>
+                </div>
+            </form>
+            <div class="profile-edit-photo">
+                <button class="subir-img">Editar Imagem</button>
+                <img src="/site alca/src/img-fav/camera.png">
+                <h3>Troque sua foto de perfil aqui.</h3>
+                <h4 class="h4-1">Tipo da imagem: <span>PNG ou JPG</span> </h4>
+                <h4 class="h4-2">Tamanho maximo: <span>2 MB</span> </h4>
+            </div>
+            <button class="save-btn">Salvar</button>
+        </div>
+    </div>
+
+
+<main>
+</main>
+    
+    <footer>
+          <div id="footer-copyright">
+              &#169 2023 all rights reserved 
+          </div> 
+    </footer>
+
+
+</body>
+</html>

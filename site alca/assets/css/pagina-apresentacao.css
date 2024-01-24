@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Figtree:wght@500&family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Figtree:wght@300;500&family=Kanit&family=Oswald:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+#user {
+    color: black;
+    width: 60px;
+    height: 60px;
+    position: absolute; 
+    left: 90%; 
+    top: 2%;
+    border: grey;
+    box-shadow: 0px 1px 2px ;
+    border-radius: 50%;
+    object-fit: fill;
+    
+}
+
+.menu-wrap {
+    position: relative;
+    top: 90%;
+    left: 75%;
+    width: 250px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    z-index: 999;
+}
+
+.menu-wrap.open-menu {
+    max-height: 400px;
+    right: 0;
+    
+}
+
+.menu {
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 1px 1px 2px  grey;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin: 20;
+}
+
+.links p {
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Figtree', sans-serif;
+}
+
+.links img {
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.links span {
+    font-weight: bold;
+    font-size: 20px;
+    transition: transform 0.5s;
+}
+
+.links:hover  span{
+    transform: translateX(5px);
+}
+
+.links:hover  p{
+    transform: translateX(5px);   
+}
+
+.logo {
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.header-icon {
+    display: flex;
+    left: 80%;
+    top: 5%;
+    position: absolute;
+    
+}
+
+.chat, .bell, .cash {
+    margin: 5px;
+}
+
+.profile-exibition img {
+    position: absolute;
+    left: 11%;
+    top: 35%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5%;
+    border: 1px grey;
+}
+
+.profile-exibition h1 {
+    position: absolute;
+    left: 27%;
+    top: 33%;
+    font-family: 'Kanit', sans-serif;
+}
+
+.profile-exibition h3 {
+    position: absolute;
+    left: 27%;
+    top: 41%;
+    font-weight: 200;
+    
+}
+
+.profile-exibition .lang {
+    position: absolute;
+    left: 27%;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.profile-exibition h4 {
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    left: 29%;
+    top: 50%;
+}
+
+.profile-exibition .country {
+    position: absolute;
+    left: 47.6%;
+    top: 35%;
+    width: 30px;
+    height: 30px;
+}
+
+.profile-exibition .verify {
+    position: absolute;
+    left: 45.4%;
+    top: 36%;
+    width: 17px;
+    height: 17px;
+}
+
+.profile-funcs-conteiner {
+    position: absolute;
+    left: 60%;
+    top: 30%;
+    width: 450px;
+    height: 700px;
+    border: 1px solid lightgray;
+    border-radius: 1.5%;
+    overflow: hidden;
+}
+
+
+.profile-funcs iframe {
+    width: 400px;
+    height: 200px;
+    border-radius: 1.5%;
+    border: 1px lightgray;
+    position: absolute;
+    left: 5.8%;
+    top: 4%;
+    background-color: grey;
+}
+
+.profile-funcs #categoria {
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    left: 15%;
+    top: 38%;
+}
+
+.profile-funcs #valor {
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    left: 65%;
+    top: 38%;
+}   
+
+#book {
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    left: 13%;
+    top: 53%;
+    width: 340px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center; 
+    background-color: #17a2b8;
+    border-radius: 2%;
+}
+
+#book:hover {
+    cursor: pointer;
+}
+
+#book p {
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    top: 9%;
+    left: 22%;
+    color: #fff;
+}
+
+
+#book img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: -122px;
+    top: 5px;
+}
+
+
+#message {
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    left: 13%;
+    top: 61%;
+    width: 340px;
+    height: 42px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center; 
+    border-radius: 2%;
+    background-color: #fff;
+}
+
+#message img {
+    position: absolute;
+    top: 3px;
+    left: 31px;
+    width: 30px;
+    height: 30px;
+}
+
+#message p {
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    top: 2.3%;
+    left: 22%;
+}
+
+#message:hover {
+    cursor: pointer;
+}
+
+#favorite {
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    left: 13%;
+    top: 69%;
+    width: 340px;
+    height: 42px;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+#favorite p { 
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    top: 2.3%;
+    left: 20%;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center; 
+    border-radius: 2%;
+}
+
+#favorite img {
+    position: absolute;
+    top: 5px;
+    left: 31px;
+    width: 25px;
+    height: 25px;
+}
+
+#favorite:hover {
+    cursor: pointer;
+}
+
+.profile-funcs h3 {
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    color: #bbbbbb;
+    top: 80%;
+    left: 14%;
+    font-weight: 100;
+}
+
+.profile-funcs img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -25px;
+    top: 3px;
+    color: #bbbbbb;
+}
+
+.profile-funcs h4 {
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    color: #bbbbbb;
+    top: 85%;
+    left: 23%;
+    font-weight: 100;
+}
+
+.profile-funcs #category {
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    color: #bbbbbb;
+    top: 35.5%;
+    left: 8%;
+    font-weight: 100;
+}
+
+.profile-funcs #value {
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    color: #bbbbbb;
+    top: 35.5%;
+    left: 60%;
+    font-weight: 100;
+}
+
+.profile-infos {
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    left: 10%;
+    top: 85%;
+}
+
+.profile-infos ul {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    list-style: none;
+    gap: 40px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+
+.profile-infos ul::after {
+    border: 1.5px solid #17a2b8;
+    bottom: 0;
+    content: "";
+    display: block;
+    margin-top: 2px;
+    position: absolute;
+    width: 12%;
+    box-sizing: border-box;
+}
+
+.profile-infos li:hover {
+    cursor: pointer;
+}
+
+.profile-about {
+    position: absolute;
+    font-family: 'Kanit', sans-serif;
+    top: 100%;
+    left: 10%;
+}
+
+.profile-about h2 {
+    font-size: 28px;
+}
+
+.profile-about p {
+   
+    font-size: 18px;
+    text-align: start;
+    text-indent: 5px;
+}
+
+.profile-about #more {
+    display: none;
+}
+
+.profile-about a {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    height: 270vh;
+}
+  
+.footer {
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 30vh; 
+    flex-shrink: 0;
+    left: 0;
+    
+}
+  
+  
+#footer-copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff; 
+    font-size: 1.4;
+    padding: 0.1rem;
+    font-weight: 90;
+    color: grey;   
+    font-family: 'Kanit', sans-serif;
+}
+  

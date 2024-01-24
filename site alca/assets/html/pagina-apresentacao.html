@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubber</title>
+
+    <link rel="stylesheet" href="../css/pagina-apresentacao.css">
+    <link rel="shortcut icon" href="/site alca/src/img/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+    <header>
+        <div class="perfil">
+            <div class="logo">
+            <a href="../html/main-page.html"><img src="/site alca/src/img/logodubsol.png" width="150px"></a>
+        </div>
+
+           
+      
+            <img src="/site alca/src/img/juarez.jpeg" id="user" onclick="toggleMenu()">
+        
+            <div class="menu-wrap" id="subMenu">
+                <div class="menu">
+                    <a href="/site alca/assets/html/perfil.html" class="links">
+                        <img src="/site alca/src/img-fav/usuario.png" width="25px">
+                        <p>Meu perfil</p>
+                        <span>></span>
+                    </a>
+                    <a href="/site alca/assets/html/casdastro.html" class="links">
+                        <img src="/site alca/src/img-fav/papel.png" width="22px">
+                        <p>Minhas informações</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="links">
+                        <img src="/site alca/src/img-fav/x.png" width="20px">
+                        <p>Sair</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        
+        </div>
+        <script>
+            let subMenu = document.getElementById("subMenu");
+
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu");
+        }
+        </script>
+        <div class="header-icon">
+                <a href="#"><span class="cash"><img src="/site alca/src/img-fav/cash.svg" width="31px"></span></a>
+                <a href="#"><span class="bell"><img src="/site alca/src/img-fav/bell.svg" width="31px"></span></a>
+                <a href="#"><span class="chat"><img src="/site alca/src/img-fav/chat.svg    " width="30px"></span></a>
+        </div>
+    
+    </header>
+    
+
+    <div class="profile-exibition-container">
+        <div class="profile-exibition">
+            <img src="/site alca/src/img/briggs.jpg">
+            <img class="country" src="/site alca/src/img-fav/brasil.png">
+            <img class="verify" src="/site alca/src/img-fav/verify.png">
+            <h1>Guilherme Briggs</h1>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Ea animi, illo sunt accusantium est dolores ...</h3>
+            <img class="lang" src="/site alca/src/img-fav/lang.png">
+            <h4>Português (Nativo)</h4>
+        </div>
+    </div>
+
+    <div class="profile-funcs-conteiner">
+        <div class="profile-funcs">
+            <iframe width="400" height="200" src="https://www.youtube.com/embed/K6kFxAs0_MI?si=0qU6WncGr9QLGKC8" title="YouTube video player" frameborder="0" allow="allowfullscreen"></iframe>
+            <h2 id="categoria">Dublador</h2>
+            <h4 id="category">Categoria:</h4>
+            <h2 id="valor">$90/min</h2>
+            <h4 id="value">Valor:</h4>
+            <button id="book"> <img src="/site alca/src/img-fav/agenda.png"><p>Agende sua produção</p> </button>
+            <button id="message"> <img src="/site alca/src/img-fav/message.png"><p>Envie uma mensagem</p></button>
+            <button id="favorite"> <img src="/site alca/src/img-fav/heart-unclick.png"><p> Salvar nos seus favoritos</p></button>
+            <h3><img src="/site alca/src/img-fav/star2.png">Este dublador está a 33 anos na profissão.</h3>
+            <h4>Verifique disponibilidade na agenda</h4>
+        </div>
+    </div>
+    
+    <div class="profile-infos-container">
+        <div class="profile-infos">
+            <ul>
+                <li id="about"><div><p>Sobre</p></div></li>
+                <li id="scheadule"><div><p>Agenda</p></div></li>
+                <li id="curriculum"><div><p>Curriculo</p></div></li>
+                <li id="port"><div><p>Especializações</p></div></li>
+            </ul>
+        </div>
+
+        <div class="profile-about">
+            <h2>Sobre o profissional</h2>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+               <br> Tempora debitis cupiditate rerum ad error recusandae id, 
+                <br> optio quibusdam br modi quis veritatis, repellat excepturi <br> nostrum,
+               quod at illo dolorem eligendi laboriosam! 
+            <br>
+           
+            <span id="more">
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                <br> Iusto explicabo odio voluptatum dicta expedita dolor sint 
+                <br> debitis tempore impedit consectetur quas accusamus,<br> ratione 
+                asperiores deleniti nostrum, incidunt iure numquam <br> totam.
+            </span>
+            </p>  
+            <br>
+            <a id="vermais-btn" onclick="vermais()">Ver mais</a>
+        </div>
+    </div>
+
+<main>
+</main>
+    
+<footer>
+    <div id="footer-copyright">
+        &#169 2023 all rights reserved 
+    </div> 
+</footer>    
+
+
+<script src="/site alca/assets/js/show-more.js"></script>
+</body>
+</html>

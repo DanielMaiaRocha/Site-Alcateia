@@ -1,0 +1,898 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Figtree:wght@500&family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Figtree:wght@300;500&family=Kanit&family=Oswald:wght@600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+#user {
+    color: black;
+    width: 60px;
+    height: 60px;
+    position: absolute; 
+    left: 90%; 
+    top: 2%;
+    border: grey;
+    box-shadow: 0px 1px 2px ;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.menu-wrap {
+    position: relative;
+    top: 90%;
+    left: 75%;
+    width: 250px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    z-index: 999;
+}
+
+.menu-wrap.open-menu {
+    max-height: 400px;
+    right: 0;
+    
+}
+
+.menu {
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 1px 1px 2px  grey;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin: 20;
+}
+
+.links p {
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Figtree', sans-serif;
+}
+
+.links img {
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.links span {
+    font-weight: bold;
+    font-size: 20px;
+    transition: transform 0.5s;
+}
+
+
+
+.links:hover  span{
+    transform: translateX(5px);
+}
+
+.links:hover  p{
+    transform: translateX(5px);   
+}
+
+.logo {
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.header-icon {
+    display: flex;
+    left: 80%;
+    top: 5%;
+    position: absolute;
+    
+}
+
+.chat, .bell, .cash {
+    margin: 5px;
+}
+
+.cadastro-form {
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    width: 1200px;
+    height: 350;
+}
+
+.cadastro-form h6 {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    color: #17a2b8;
+}
+
+.cadastro-form legend {
+    display: flex;
+    font-size: 20px;
+    margin-left: 15px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.cadastro-form fieldset {
+    border-color: #17a2b8;
+    border-radius: 5px;
+    height: 300px;
+}
+
+.form-group, 
+.form-group-pais, 
+.form-group-state, 
+.form-drt {
+       padding: 10px;
+}
+
+.form-group {
+    margin-left: 15px;
+}
+
+
+.form-group label {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    color: #17a2b8;
+}
+
+.form-group input {
+    width: 1130px;
+    padding: 6px;
+    font-size: 15px;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 5px;
+}
+
+.form-group-pais {
+    margin-left: 15px;
+}
+
+.form-group-pais label {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    color: #17a2b8;
+}
+
+.form-group-pais select {
+    padding: 9px;
+    font-weight: bold;
+    width: 550px;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 5px;
+}
+
+.form-group-state {
+    margin-left: 50%;
+    margin-top: -7.5%;
+}
+
+.form-group-state label {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    color: #17a2b8;
+}
+
+.form-group-state select {
+    padding: 9px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    width: 550px;
+    border-radius: 5px;
+}
+
+.form-drt label {
+    color: #17a2b8;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+.form-drt input {
+    margin-left: 1.2%;
+    padding: 9px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 5px;
+}
+
+.pessoal-data-form fieldset {
+    height: 470px;
+}
+
+.foto {
+    margin-left: 20%;
+    margin-top: -5%;
+}
+
+.foto label {
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    font-size: 17px;
+}
+
+.foto button {
+    background-color: #17a2b8;
+    color: white;
+    padding: 8px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+.date {
+    margin-left: 23%;
+    margin-top: -6.5%;
+}
+
+.date label {
+    color: #17a2b8;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.date input {
+    padding: 9px;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 5px;
+}
+
+.etnia {
+    margin-left: 38%;
+    margin-top: -5.5%;
+}
+
+.etnia label {
+    color: #17a2b8;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.etnia select {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.gender {
+    margin-left: 50%;
+    margin-top: -5.5%;
+}
+
+.gender label {
+    color: #17a2b8;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.gender select {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.estado-civil {
+    margin-left: 64%;
+    margin-top: -5.5%;
+}
+
+.estado-civil label {
+    color: #17a2b8;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.estado-civil select {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.tipo-pessoa {
+    margin-left: 77%;
+    margin-top: -5.5%;
+}
+
+.tipo-pessoa label {
+    color: #17a2b8;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.tipo-pessoa select {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.rg {
+    margin-left: 2%;
+    margin-top: 1.5%;
+}
+
+.rg label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #17a2b8;
+}
+
+.rg input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.emissor {
+    margin-left: 20%;
+    margin-top: -5.5%;
+}
+
+.emissor label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #17a2b8;
+}
+
+.emissor input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.email {
+    margin-left: 39%;
+    margin-top: -5.5%;
+}
+
+.email label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #17a2b8;
+}
+
+.email input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.celular{
+    margin-left: 73%;
+    margin-top: -5.5%;
+}
+
+.celular label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #17a2b8;
+}
+
+.celular select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 6.5px;
+    width: 75px;
+    border-radius: 5px;
+}
+
+.celular input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 8px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.ctps {
+    margin-left: 2%;
+    margin-top: 12px;
+}
+
+.ctps label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+    font-size: 15px;
+}
+
+.ctps .input1 {
+    width: 150px;
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.ctps .input2 {
+    width: 250px;
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.uf-data {
+    margin-left: 42%;
+    margin-top: -5.5%;
+}
+
+.uf-data label {
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+    color: #17a2b8;
+    font-size: 15px;
+}
+
+.uf-data select {
+    width: 120px;
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.uf-data input {
+    width: 250px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.pis {
+    margin-left: 78%;
+    margin-top: -5.7%;
+}
+
+.pis label {
+    color: #17a2b8;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.pis input {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.cep {
+    margin-left: 1.5%;
+}
+
+.cep label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.cep input {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.logradouro {
+    margin-left: 14%;
+    margin-top: -5.7%;
+}
+
+.logradouro label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.logradouro input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 850px;
+    border-radius: 5px;
+}
+
+.numero-casa {
+    margin-left: 89%;
+    margin-top: -5.7%;
+}
+
+.numero-casa label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.numero-casa input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.complemento {
+    margin-left: 1.5%;
+    margin-top: 0.5%;
+}
+
+.complemento label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.complemento input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.pais-endereco {
+    margin-left: 20%;
+    margin-top: -5.6%;
+}
+
+.pais-endereco label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.pais-endereco select {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.estado {
+    margin-left: 50%;
+    margin-top: -5.6%;
+}
+
+.estado label {
+    color: #17a2b8;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.estado select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cidade {
+    margin-left: 67%;
+    margin-top: -5.6%;
+}
+
+.cidade label {
+    color: #17a2b8;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.cidade input {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    width: 330px;
+    border-radius: 5px;
+}
+
+.bairro {
+    margin-left: 1.5%;
+    margin-top: 1%;
+}
+
+.bairro label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.bairro input {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.recebimento-form fieldset {
+    height: 200px;
+}
+
+.recebimento {
+    margin-left: 1.5%;
+}
+
+.recebimento label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.recebimento select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.contador {
+    margin-left: 1.5%;
+    margin-top: 1%;
+}
+
+.contador label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.contador input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 650px;
+    border-radius: 5px;
+}
+
+.recibo-ir {
+    margin-left: 61%;
+    margin-top: -5.4%;
+}
+
+.recibo-ir label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.recibo-ir select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.recibo-inss {
+    margin-left: 80%;
+    margin-top: -5.6%;
+}
+
+.recibo-inss label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.recibo-inss select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.save-btn {
+    font-family: 'Kanit', sans-serif;
+    color: #fff;
+    background-color: #17a2b8;
+    font-size: 18px;
+    width: 80px;
+    padding: 8px;
+    margin-left: 93.5%;
+    margin-top: 1.5%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dados-acesso-form fieldset {
+    height: 220px;
+}
+
+.sistema {
+    margin-left: 1.5%;
+}
+
+.sistema label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.sistema input {
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.memoria {
+    margin-left: 36%;
+    margin-top: -5.5%;
+}
+
+.memoria label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.memoria select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 180px;
+    border-radius: 5px;
+}
+
+.upload {
+    margin-left: 53%;
+    margin-top: -5.5%;
+}
+
+.upload label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.upload input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.download {
+    margin-left: 71%;
+    margin-top: -5.6%;
+}
+
+.download label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.download input {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navegador {
+    margin-left: 89%;
+    margin-top: -5.5%;
+}
+
+.navegador label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.navegador select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.provedor {
+    margin-left: 1.5%;
+}
+
+.provedor label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.provedor select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 160px;
+    border-radius: 5px;
+}
+
+.autenticador {
+    margin-left: 17.5%;
+    margin-top: -5.6%;
+}
+
+.autenticador label {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+.autenticador select {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+main {
+    height: 330vh;
+    
+  }
+  
+  .footer {
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 30vh; 
+    flex-shrink: 0;
+    left: 0;
+    
+  }
+  
+  
+  #footer-copyright {
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+    justify-content: center;
+    background-color: #ffffff; 
+    font-size: 1.4;
+    padding: 0.1rem;
+    font-weight: 90;
+    color: grey;   
+  }
+  
